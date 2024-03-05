@@ -6,22 +6,27 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "tauri-app",
-    "version": "0.2.0"
+    "productName": "raiodoro",
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
-      "all": false,
+      "all": true,
       "shell": {
-        "all": false,
+        "all": true,
         "open": true
       }
     },
     "windows": [
       {
-        "title": "tauri-app",
-        "width": 800,
-        "height": 600
+        "title": "Raio⚡️Doro",
+        "width": 300,
+        "height": 300,
+        "resizable": false,
+        "maximizable": false,
+        "titleBarStyle": "Transparent",
+        "decorations": true,
+        "transparent": true
       }
     ],
     "security": {
