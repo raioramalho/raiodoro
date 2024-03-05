@@ -3,6 +3,8 @@ import { ThemeToggle } from "./components/ui-theme/theme-toggle";
 import { Button } from "./components/ui/button";
 import { PauseIcon, PlayIcon } from "lucide-react";
 import { ExitIcon, StopIcon } from "@radix-ui/react-icons";
+import { tauri } from "@tauri-apps/api";
+import { ask } from "@tauri-apps/api/dialog";
 
 function App() {
   const [timer, setTimer] = useState("00:00");
@@ -48,16 +50,30 @@ function App() {
     setTimer(timer);
   }
 
-  function handleStop() {
-    setIsRunning(false);
-    setTimer("00:00");
+  async function handleStop() {
+    await ask("Deseja zerar o timer?", "Raio⚡️Doro")
+      .then((res) => {
+        console.log(res);
+        setIsRunning(false);
+        setTimer("00:00");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
-  function handleExit() {
-    // Aqui você pode adicionar a lógica para sair do aplicativo
+  async function handleExit() {
+    await ask("Deseja mesmo fechar o pomodoro?", "Raio⚡️Doro")
+      .then((res) => {
+        console.log(res);
+        tauri.invoke("exit_app", {});
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
-  function handleChange(e) {
+  function handleChange(e:any) {
     const value = e.target.value;
     if (/^\d{0,2}:\d{0,2}$/.test(value) || value === "") {
       setTimer(value);
@@ -99,16 +115,17 @@ function App() {
   return (
     <main
       id="main"
-      className="w-[300px] h-[300px] flex flex-col justify-center items-center p-4 border rounded-md"
+      className="w-[300px] h-[300px] flex flex-col justify-center items-center p-4 border rounded-md z-10"
     >
       <div
         id="timer-div"
-        className="w-[200px] h-[200px] border rounded-full flex flex-col justify-center items-center"
+        className="w-[200px] h-[200px] border-2 rounded-full flex flex-col justify-center items-center"
       >
         <ThemeToggle />
         <input
           onChange={handleChange}
-          className="text-6xl font-bold w-[175px] focus:border-none focus:outline-none"
+          readOnly={isRunning}
+          className="text-6xl w-[165px] focus:border-none focus:outline-none z-0"
           value={timer}
         />
       </div>
