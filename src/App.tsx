@@ -8,8 +8,22 @@ import { ask } from "@tauri-apps/api/dialog";
 import { sendNotification } from "@tauri-apps/api/notification";
 import { Input } from "./components/ui/input";
 import { Backend_log } from "./cases/backend_log";
+import {
+  isPermissionGranted,
+  requestPermission,
+} from "@tauri-apps/api/notification";
 
 function App() {
+  async function request_permission() {
+    let permissionGranted = await isPermissionGranted();
+    if (!permissionGranted) {
+      const permission = await requestPermission();
+      permissionGranted = permission === "granted";
+    }
+  }
+
+  request_permission();
+
   const [timer, setTimer] = useState("00:00");
   const [isRunning, setIsRunning] = useState(false);
 
@@ -31,7 +45,7 @@ function App() {
             sendNotification({
               title: `O tempo acabou!!`,
               body: `Tire seu descanso, e retorne para o seu foco!`,
-              sound: "default"
+              sound: "default",
             });
 
             return;
@@ -63,7 +77,7 @@ function App() {
   async function handleStop() {
     await ask("Deseja zerar o timer?", "Raio⚡️Doro")
       .then((res: boolean) => {
-        if(res) {
+        if (res) {
           Backend_log("User selected stop timer.");
           setIsRunning(false);
           setTimer("00:00");
@@ -76,17 +90,19 @@ function App() {
   }
 
   async function handleExit() {
-    Backend_log("Send ask for the user.")
+    Backend_log("Send ask for the user.");
     await ask("Deseja mesmo fechar o pomodoro?", "Raio⚡️Doro")
       .then((res) => {
-        res ? tauri.invoke("exit_app", {}) : Backend_log("User selected don't close.")
+        res
+          ? tauri.invoke("exit_app", {})
+          : Backend_log("User selected don't close.");
       })
       .catch((err) => {
         Backend_log(`${JSON.stringify(err)}`);
       });
   }
 
-  function handleChange(e:any) {
+  function handleChange(e: any) {
     const value = e.target.value;
     if (/^\d{0,2}:\d{0,2}$/.test(value) || value === "") {
       setTimer(value);
@@ -149,9 +165,6 @@ function App() {
         {isRunning ? <PauseButton /> : <StartButton />}
         <StopButton />
         <Button onClick={handleExit} variant={"destructive"} className="gap-1">
-
-
-          
           <ExitIcon className="w-4 h-4" />
           exit
         </Button>
