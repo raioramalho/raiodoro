@@ -136,6 +136,9 @@ function App() {
         {isRunning ? <PauseButton /> : <StartButton />}
         <StopButton />
         <Button onClick={handleExit} variant={"destructive"} className="gap-1">
+
+
+          
           <ExitIcon className="w-4 h-4" />
           exit
         </Button>
