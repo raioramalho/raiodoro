@@ -37,17 +37,19 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 ## Versão atual
 
-[0.1.2]
+[0.1.2] - 06/03/2024
 
 ## Notas de Lançamento
 
 ### Versão 0.1.3
-- **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado.
-- **Correção de Bug:** Detalhes visuais no titulo corrigidos.
+- **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. []
+- **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  []
+- **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado. [x]
+- **Correção de Bug:** Detalhes visuais no titulo corrigidos. [x]
 
 ### Versão 0.1.2 - 06/03/2024
-- **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos.
-- **Novo Recurso:** Adicionada notificação ao término do pomodoro.
+- **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos. [x]
+- **Novo Recurso:** Adicionada notificação ao término do pomodoro. [x]
 
 ### Versão 0.1.1 - 06/03/2024
-- **Correção de Bug:** Detalhes visuais no tema dark foram ajustados.
+- **Correção de Bug:** Detalhes visuais no tema dark foram ajustados. [x]
