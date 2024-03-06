@@ -43,7 +43,7 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 ### Versão 0.1.3
 - **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado.
-- **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos.
+- **Correção de Bug:** Detalhes visuais no titulo corrigidos.
 
 ### Versão 0.1.2 - 06/03/2024
 - **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos.
