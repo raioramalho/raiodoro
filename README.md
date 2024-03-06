@@ -45,9 +45,9 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 - **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado.
 - **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos.
 
-### Versão 0.1.2
+### Versão 0.1.2 - 06/03/2024
 - **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos.
 - **Novo Recurso:** Adicionada notificação ao término do pomodoro.
 
-### Versão 0.1.1
+### Versão 0.1.1 - 06/03/2024
 - **Correção de Bug:** Detalhes visuais no tema dark foram ajustados.
