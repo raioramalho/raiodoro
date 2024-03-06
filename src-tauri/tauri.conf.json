@@ -12,6 +12,14 @@
   "tauri": {
     "allowlist": {
       "all": true,
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
       "shell": {
         "all": true,
         "open": true
@@ -19,16 +27,17 @@
     },
     "windows": [
       {
-        "title": "Raio⚡️Doro",
+        "title": "R⚡️",
         "width": 300,
         "height": 300,
         "resizable": false,
         "maximizable": false,
         "titleBarStyle": "Transparent",
         "decorations": true,
-        "transparent": true
+        "transparent": false
       }
     ],
+    "macOSPrivateApi": false,
     "security": {
       "csp": null
     },

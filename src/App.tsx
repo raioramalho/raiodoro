@@ -7,6 +7,7 @@ import { tauri } from "@tauri-apps/api";
 import { ask } from "@tauri-apps/api/dialog";
 import { sendNotification } from "@tauri-apps/api/notification";
 import { Input } from "./components/ui/input";
+import { Backend_log } from "./cases/backend_log";
 
 function App() {
   const [timer, setTimer] = useState("00:00");
@@ -61,24 +62,27 @@ function App() {
 
   async function handleStop() {
     await ask("Deseja zerar o timer?", "Raio⚡️Doro")
-      .then((res) => {
-        console.log(res);
-        setIsRunning(false);
-        setTimer("00:00");
+      .then((res: boolean) => {
+        if(res) {
+          Backend_log("User selected stop timer.");
+          setIsRunning(false);
+          setTimer("00:00");
+        }
+        Backend_log("User selected don't stop timer.");
       })
       .catch((err) => {
-        console.log(err);
+        Backend_log(`${JSON.stringify(err)}`);
       });
   }
 
   async function handleExit() {
+    Backend_log("Send ask for the user.")
     await ask("Deseja mesmo fechar o pomodoro?", "Raio⚡️Doro")
       .then((res) => {
-        console.log(res);
-        tauri.invoke("exit_app", {});
+        res ? tauri.invoke("exit_app", {}) : Backend_log("User selected don't close.")
       })
       .catch((err) => {
-        console.log(err);
+        Backend_log(`${JSON.stringify(err)}`);
       });
   }
 
@@ -134,7 +138,7 @@ function App() {
         <Input
           onChange={handleChange}
           readOnly={isRunning}
-          className="text-6xl w-[165px] border-none outline-none focus:border-none focus:outline-none z-0"
+          className="ml-2 text-6xl w-[165px] border-none outline-none focus:border-none focus:outline-none z-0"
           value={timer}
         />
       </div>
