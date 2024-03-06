@@ -37,10 +37,14 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 ## Versão
 
-[0.1.1]
+[0.1.2]
 
 ## Notas de Lançamento
 
 [0.1.1] => {
-    Bugs visuais no tema dark.
+    [BUGS] - detalhes visuais no tema dark.
+}
+[0.1.2] => {
+    [FIX] - detalhes visuais no tema dark.
+    [FEATURE] - notificação ao termino do pomodoro. 
 }

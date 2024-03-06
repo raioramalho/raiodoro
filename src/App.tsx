@@ -5,6 +5,8 @@ import { PauseIcon, PlayIcon } from "lucide-react";
 import { ExitIcon, StopIcon } from "@radix-ui/react-icons";
 import { tauri } from "@tauri-apps/api";
 import { ask } from "@tauri-apps/api/dialog";
+import { sendNotification } from "@tauri-apps/api/notification";
+import { Input } from "./components/ui/input";
 
 function App() {
   const [timer, setTimer] = useState("00:00");
@@ -24,6 +26,13 @@ function App() {
           } else {
             setIsRunning(false);
             clearInterval(interval);
+
+            sendNotification({
+              title: `O tempo acabou!!`,
+              body: `Tire seu descanso, e retorne para o seu foco!`,
+              sound: "default"
+            });
+
             return;
           }
         }
@@ -122,10 +131,10 @@ function App() {
         className="w-[200px] h-[200px] border-2 rounded-full flex flex-col justify-center items-center"
       >
         <ThemeToggle />
-        <input
+        <Input
           onChange={handleChange}
           readOnly={isRunning}
-          className="text-6xl w-[165px] focus:border-none focus:outline-none z-0"
+          className="text-6xl w-[165px] border-none outline-none focus:border-none focus:outline-none z-0"
           value={timer}
         />
       </div>
