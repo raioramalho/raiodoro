@@ -35,7 +35,7 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 [Alan Ramalho]
 
-## Versão
+## Versão atual
 
 [0.1.2]
 
