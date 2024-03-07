@@ -19,8 +19,6 @@ jobs:
         with:
           profile: minimal
           toolchain: stable
-      - name: Instalando Tauri CLI
-        run: cargo install tauri-bundler --version ^0.12.0
       - name: Instalando Yarn
         run: npm install -g yarn
       - name: Instalando depedencias do projeto e rodando build do vite
