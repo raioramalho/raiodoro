@@ -10,13 +10,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Using Node.js
+      - name: Instalando Node.Js.
         uses: actions/setup-node@v2
         with:
           node-version: 21.x
-      - name: install yarn
+      - name: Instalando Rust & Cargo.
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+      - name: Instalando Tauri - CLI.
+        run: cargo install tauri-bundler --version ^0.12.0
+      - name: Instalando Yarn.
         run: npm install -g yarn
-      - name: yarn install, build and test
+      - name: Instalando depedencias do projeto e rodando build do vite.
         run: |
           yarn install
           yarn run build
