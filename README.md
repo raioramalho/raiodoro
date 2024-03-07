@@ -49,6 +49,7 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 [ macos (✅) - windows(✅) - ubuntu(👨🏾‍🔧)]
 
+- **Novo Recurso Visual:** Novo icone do app. [✅]
 - **Novo Recurso:** Github actions - step 1 - nodejs yarn & vite build. [✅]
 - **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  [👨🏾‍🔧]
 - **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado. [✅]
