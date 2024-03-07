@@ -42,16 +42,21 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 ## Notas de Lançamento
 
 ### Versão 0.1.3
-- **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. []
-- **Novo Recurso:** Github actions - step 2 - cargo, rust, tauri build. [ macos (x) - windows(x) - ubuntu(?)]
-- **Novo Recurso:** Github actions - step 1 - nodejs yarn & vite build. [x]
-- **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  []
-- **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado. [x]
-- **Correção de Bug:** Detalhes visuais no titulo corrigidos. [x]
+- **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. [👨🏾‍🔧]
+- **Novo Recurso:** Github actions - step 2 - cargo, rust, tauri build. [👨🏾‍🔧] 
+
+[![Integration Service](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main&event=release)](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml)
+
+[ macos (✅) - windows(✅) - ubuntu(👨🏾‍🔧)]
+
+- **Novo Recurso:** Github actions - step 1 - nodejs yarn & vite build. [✅]
+- **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  [👨🏾‍🔧]
+- **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado. [✅]
+- **Correção de Bug:** Detalhes visuais no titulo corrigidos. [✅]
 
 ### Versão 0.1.2 - 06/03/2024
-- **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos. [x]
-- **Novo Recurso:** Adicionada notificação ao término do pomodoro. [x]
+- **Correção de Bug:** Detalhes visuais no tema dark foram corrigidos. [✅]
+- **Novo Recurso:** Adicionada notificação ao término do pomodoro. [✅]
 
 ### Versão 0.1.1 - 06/03/2024
-- **Correção de Bug:** Detalhes visuais no tema dark foram ajustados. [x]
+- **Correção de Bug:** Detalhes visuais no tema dark foram ajustados. [✅]
