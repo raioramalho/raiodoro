@@ -42,3 +42,14 @@ jobs:
 
       - name: Rodando build do APP
         run: yarn tauri build
+
+      - name: Upload de artefatos
+        if: success()  # Upload apenas se o build for bem sucedido
+        uses: actions/upload-artifact@v2
+        with:
+          name: tauri-artifacts
+          path: |
+            src-tauri/target/release/bundle/msi/*.msi
+            src-tauri/target/release/bundle/nsis/*.exe
+            src-tauri/target/release/bundle/macos/*.app
+            src-tauri/target/release/bundle/dmg/*.dmg
