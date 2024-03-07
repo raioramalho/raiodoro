@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "CI=false && tsc && vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
     "tauri:dev": "yarn tauri dev",
-    "tauri:build": "CI=false && tsc && vite build && yarn tauri build"
+    "tauri:build": "tsc && vite build && yarn tauri build"
   },
   "dependencies": {
     "@radix-ui/react-context-menu": "^2.1.5",
