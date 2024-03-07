@@ -43,6 +43,8 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 ### Versão 0.1.3
 - **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. []
+- **Novo Recurso:** Github actions - step 2 - cargo, rust, tauri build. []
+- **Novo Recurso:** Github actions - step 1 - nodejs yarn & vite build. [x]
 - **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  []
 - **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado. [x]
 - **Correção de Bug:** Detalhes visuais no titulo corrigidos. [x]
