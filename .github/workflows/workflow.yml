@@ -21,8 +21,16 @@ jobs:
           toolchain: stable
       - name: Instalando Yarn
         run: npm install -g yarn
-      - name: Instalando depedencias do projeto e rodando build do vite
+      - name: Instalando dependências do GDK-3.0
+        run: sudo apt-get install libgtk-3-dev -y
+      - name: Configurando PKG_CONFIG_PATH
+        run: export PKG_CONFIG_PATH=/usr/lib/pkgconfig
+      - name: Instalando dependências do projeto
         run: |
           yarn install
+      - name: Rodando build do vite
+        run: |
           yarn run build
+      - name: Rodando build do tauri
+        run: |
           yarn run tauri:build
