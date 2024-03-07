@@ -43,6 +43,3 @@ jobs:
       
       - name: Rodando build do Vite
         run: yarn run build
-      
-      - name: Rodando build do Tauri
-        run: yarn run tauri:build
