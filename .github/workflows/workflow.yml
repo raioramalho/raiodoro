@@ -1,6 +1,8 @@
 name: Integration Service
 
-on: push
+on:
+  push:
+  pull_request:
 
 jobs:
   continuos-integration:
