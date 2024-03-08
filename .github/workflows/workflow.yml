@@ -35,7 +35,7 @@ jobs:
       
       - name: Instalando dependências do javascriptcoregtk-4.0 (apenas para Ubuntu)
         if: matrix.platform == 'ubuntu-latest'
-        run: sudo apt-get install -y && apt-get -y install libgtk-3-dev
+        run: sudo apt-get install -y && sudo apt-get install -y libgtk-3-dev
 
       - name: Rodando build do VITE
         run: yarn run build
