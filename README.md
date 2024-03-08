@@ -46,7 +46,7 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 ## Notas de Lançamento
 
-### Versão 0.1.3
+### Versão 0.1.3 - 08/03/2024
 - **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. [👨🏾‍🔧]
 - **Novo Recurso:** Github actions - step 2 - cargo, rust, tauri build. [✅] 
 - **Novo Recurso Visual:** Novo icone do app. [✅]
