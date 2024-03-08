@@ -3,6 +3,7 @@ name: Integration Service
 on:
   push:
   pull_request:
+  release:
 
 jobs:
   continuos-integration:
