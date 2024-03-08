@@ -1,4 +1,9 @@
-# Raio⚡️Doro | Pomodoro App
+# Raio⚡️Doro | Pomodoro App v0.1.3
+
+[![build](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main&event=release)](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml)
+
+[ macos (✅) - windows(✅) - ubuntu(👨🏾‍🔧)]
+
 
 ![Raio⚡️Doro App Screenshot](raiodoro.png)
 
@@ -37,18 +42,13 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 
 ## Versão atual
 
-[0.1.2] - 06/03/2024
+[0.1.3] - 07/03/2024
 
 ## Notas de Lançamento
 
 ### Versão 0.1.3
 - **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. [👨🏾‍🔧]
-- **Novo Recurso:** Github actions - step 2 - cargo, rust, tauri build. [👨🏾‍🔧] 
-
-[![Integration Service](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main&event=release)](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml)
-
-[ macos (✅) - windows(✅) - ubuntu(👨🏾‍🔧)]
-
+- **Novo Recurso:** Github actions - step 2 - cargo, rust, tauri build. [✅] 
 - **Novo Recurso Visual:** Novo icone do app. [✅]
 - **Novo Recurso:** Github actions - step 1 - nodejs yarn & vite build. [✅]
 - **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  [👨🏾‍🔧]
