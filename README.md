@@ -4,7 +4,6 @@
 
 [ macos (✅) - windows(✅) - ubuntu(👨🏾‍🔧)]
 
-
 ![Raio⚡️Doro App Screenshot](raiodoro.png)
 
 O Raio⚡️Doro App é uma ferramenta de gerenciamento de tempo baseada na técnica de produtividade Pomodoro. Ele permite aos usuários dividir seu trabalho em intervalos de tempo focados, conhecidos como "pomodoros", separados por breves pausas. Este aplicativo é uma implementação moderna dessa técnica, desenvolvida usando a biblioteca React.
