@@ -1,7 +1,7 @@
 # Raio⚡️Doro | Pomodoro App v0.1.3
 
-[![Release - 0.1.3](https://img.shields.io/static/v1?label=Release&message=0.1.3&color=2ea44f)](https://)
-[![MacOs & Windows](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml)
+[![Release - 0.1.3](https://img.shields.io/static/v1?label=Release&message=0.1.3&color=2ea44f)](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.3)
+[![MacOs & Windows](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.3)
 
 ![Raio⚡️Doro App Screenshot](raiodoro.png)
 
