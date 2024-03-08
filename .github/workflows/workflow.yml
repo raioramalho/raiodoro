@@ -1,4 +1,4 @@
-name: Pull Request BUILD
+name: MacOs & Windows
 
 on:
   pull_request:
