@@ -113,7 +113,7 @@ function App() {
     return (
       <Button onClick={handleStart} variant={"outline"} className="gap-1">
         <PlayIcon className="w-4 h-4" />
-        start
+        Start
       </Button>
     );
   }
@@ -122,7 +122,7 @@ function App() {
     return (
       <Button onClick={handlePause} variant={"outline"} className="gap-1">
         <PauseIcon className="w-4 h-4" />
-        pause
+        Pause
       </Button>
     );
   }
@@ -136,7 +136,7 @@ function App() {
         disabled={isRunning}
       >
         <StopIcon className="w-4 h-4" />
-        stop
+        Stop
       </Button>
     );
   }
@@ -166,7 +166,7 @@ function App() {
         <StopButton />
         <Button onClick={handleExit} variant={"destructive"} className="gap-1">
           <ExitIcon className="w-4 h-4" />
-          exit
+          Exit
         </Button>
       </div>
     </main>
