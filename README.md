@@ -1,6 +1,6 @@
 # Raio⚡️Doro | Pomodoro App v0.1.3
 
-[![Pull Request BUILD](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main&event=pull_request)](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml)
+[![MacOs & Windows](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml)
 
 [ macos (✅) - windows(✅) - ubuntu(👨🏾‍🔧)]
 
