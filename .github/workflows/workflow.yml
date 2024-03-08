@@ -1,9 +1,7 @@
-name: Integration Service
+name: Pull Request BUILD
 
 on:
-  push:
   pull_request:
-  release:
 
 jobs:
   continuos-integration:
