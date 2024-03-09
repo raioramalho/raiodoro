@@ -144,7 +144,7 @@ function App() {
   return (
     <main
       id="main"
-      className="w-[300px] h-[300px] flex flex-col justify-center items-center p-4 border rounded-md z-10"
+      className="antialiased w-[300px] h-[300px] flex flex-col justify-center items-center p-4 border rounded-md z-10"
     >
       <div
         id="timer-div"
