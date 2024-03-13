@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./components/ui-theme/theme-toggle";
 import { Button } from "./components/ui/button";
-import { PauseIcon, PlayIcon } from "lucide-react";
-import { ExitIcon, StopIcon } from "@radix-ui/react-icons";
+import { ExitIcon } from "@radix-ui/react-icons";
 import { tauri } from "@tauri-apps/api";
 import { ask } from "@tauri-apps/api/dialog";
 import { sendNotification } from "@tauri-apps/api/notification";
@@ -12,6 +11,9 @@ import {
   isPermissionGranted,
   requestPermission,
 } from "@tauri-apps/api/notification";
+import { StartButton } from "./components/app/start-button";
+import { PauseButton } from "./components/app/puase-button";
+import { StopButton } from "./components/app/stop-button";
 
 function App() {
   async function request_permission() {
@@ -109,38 +111,6 @@ function App() {
     }
   }
 
-  function StartButton() {
-    return (
-      <Button onClick={handleStart} variant={"outline"} className="gap-1">
-        <PlayIcon className="w-4 h-4" />
-        Start
-      </Button>
-    );
-  }
-
-  function PauseButton() {
-    return (
-      <Button onClick={handlePause} variant={"outline"} className="gap-1">
-        <PauseIcon className="w-4 h-4" />
-        Pause
-      </Button>
-    );
-  }
-
-  function StopButton() {
-    return (
-      <Button
-        onClick={handleStop}
-        variant={"outline"}
-        className="gap-1"
-        disabled={isRunning}
-      >
-        <StopIcon className="w-4 h-4" />
-        Stop
-      </Button>
-    );
-  }
-
   return (
     <main
       id="main"
@@ -162,8 +132,12 @@ function App() {
         id="control-div"
         className="flex flex-row justify-center items-center gap-1 mt-4"
       >
-        {isRunning ? <PauseButton /> : <StartButton />}
-        <StopButton />
+        {isRunning ? (
+          <PauseButton onClick={handlePause} />
+        ) : (
+          <StartButton onClick={handleStart} />
+        )}
+        <StopButton onClick={handleStop} isRunning={isRunning} />
         <Button onClick={handleExit} variant={"destructive"} className="gap-1">
           <ExitIcon className="w-4 h-4" />
           Exit
