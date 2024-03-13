@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./components/ui-theme/theme-toggle";
-import { Button } from "./components/ui/button";
-import { ExitIcon } from "@radix-ui/react-icons";
 import { tauri } from "@tauri-apps/api";
 import { ask } from "@tauri-apps/api/dialog";
 import { sendNotification } from "@tauri-apps/api/notification";
@@ -11,9 +9,8 @@ import {
   isPermissionGranted,
   requestPermission,
 } from "@tauri-apps/api/notification";
-import { StartButton } from "./components/app/start-button";
-import { PauseButton } from "./components/app/puase-button";
-import { StopButton } from "./components/app/stop-button";
+import { ControlButtons } from "./components/app/control-buttons";
+import { Relogio } from "./components/app/relogio";
 
 function App() {
   async function request_permission() {
@@ -116,33 +113,14 @@ function App() {
       id="main"
       className="antialiased w-[300px] h-[300px] flex flex-col justify-center items-center p-4 border rounded-md z-10"
     >
-      <div
-        id="timer-div"
-        className="w-[200px] h-[200px] border-2 rounded-full flex flex-col justify-center items-center"
-      >
-        <ThemeToggle />
-        <Input
-          onChange={handleChange}
-          readOnly={isRunning}
-          className="ml-2 text-6xl w-[165px] border-none outline-none focus:border-none focus:outline-none z-0"
-          value={timer}
-        />
-      </div>
-      <div
-        id="control-div"
-        className="flex flex-row justify-center items-center gap-1 mt-4"
-      >
-        {isRunning ? (
-          <PauseButton onClick={handlePause} />
-        ) : (
-          <StartButton onClick={handleStart} />
-        )}
-        <StopButton onClick={handleStop} isRunning={isRunning} />
-        <Button onClick={handleExit} variant={"destructive"} className="gap-1">
-          <ExitIcon className="w-4 h-4" />
-          Exit
-        </Button>
-      </div>
+      <Relogio isRunning={isRunning} handleChange={handleChange} timer={timer} />
+      <ControlButtons 
+        isRunning={isRunning} 
+        handleStart={handleStart} 
+        handlePause={handlePause} 
+        handleStop={handleStop} 
+        handleExit={handleExit}
+      />
     </main>
   );
 }
