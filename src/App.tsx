@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
-import { ThemeToggle } from "./components/ui-theme/theme-toggle";
 import { tauri } from "@tauri-apps/api";
 import { ask } from "@tauri-apps/api/dialog";
 import { sendNotification } from "@tauri-apps/api/notification";
-import { Input } from "./components/ui/input";
 import { Backend_log } from "./cases/backend_log";
 import {
   isPermissionGranted,
