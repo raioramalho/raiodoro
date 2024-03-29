@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { tauri } from "@tauri-apps/api";
-import { ask } from "@tauri-apps/api/dialog";
 import { sendNotification } from "@tauri-apps/api/notification";
 import { Backend_log } from "./cases/backend_log";
 import {
@@ -9,6 +7,11 @@ import {
 } from "@tauri-apps/api/notification";
 import { ControlButtons } from "./components/app/control-buttons";
 import { Relogio } from "./components/app/relogio";
+import handleStart from "./actions/handle.start";
+import handleStop from "./actions/handle.stop";
+import handlePause from "./actions/handle.pause";
+import handleExit from "./actions/handle.exit";
+import handleChange from "./actions/handle.change";
 
 function App() {
   async function request_permission() {
@@ -62,62 +65,34 @@ function App() {
     return () => clearInterval(interval);
   }, [timer, isRunning]);
 
-  function handleStart() {
-    setIsRunning(true);
-  }
-
-  function handlePause() {
-    setIsRunning(false);
-    setTimer(timer);
-  }
-
-  async function handleStop() {
-    await ask("Deseja zerar o timer?", "Raio⚡️Doro")
-      .then((res: boolean) => {
-        if (res) {
-          Backend_log("User selected stop timer.");
-          setIsRunning(false);
-          setTimer("00:00");
-        }
-        Backend_log("User selected don't stop timer.");
-      })
-      .catch((err) => {
-        Backend_log(`${JSON.stringify(err)}`);
-      });
-  }
-
-  async function handleExit() {
-    Backend_log("Send ask for the user.");
-    await ask("Deseja mesmo fechar o pomodoro?", "Raio⚡️Doro")
-      .then((res) => {
-        res
-          ? tauri.invoke("exit_app", {})
-          : Backend_log("User selected don't close.");
-      })
-      .catch((err) => {
-        Backend_log(`${JSON.stringify(err)}`);
-      });
-  }
-
-  function handleChange(e: any) {
-    const value = e.target.value;
-    if (/^\d{0,2}:\d{0,2}$/.test(value) || value === "") {
-      setTimer(value);
-    }
-  }
-
   return (
     <main
       id="main"
       className="antialiased w-[300px] h-[300px] flex flex-col justify-center items-center p-4 border rounded-md z-10"
     >
-      <Relogio isRunning={isRunning} handleChange={handleChange} timer={timer} />
-      <ControlButtons 
-        isRunning={isRunning} 
-        handleStart={handleStart} 
-        handlePause={handlePause} 
-        handleStop={handleStop} 
-        handleExit={handleExit}
+      <Relogio
+        isRunning={isRunning}
+        handleChange={(e: any) => {
+          handleChange(e, setTimer);
+        }}
+        timer={timer}
+      />
+
+      <ControlButtons
+        timer={timer}
+        isRunning={isRunning}
+        handleStart={() => {
+          handleStart(setIsRunning);
+        }}
+        handlePause={() => {
+          handlePause(setIsRunning, setTimer, timer);
+        }}
+        handleStop={() => {
+          handleStop(setIsRunning, setTimer, Backend_log);
+        }}
+        handleExit={() => {
+          handleExit(Backend_log);
+        }}
       />
     </main>
   );
