@@ -1,7 +1,7 @@
-# Raio⚡️Doro | Pomodoro App v0.1.3
+# Raio⚡️Doro | Pomodoro App v0.1.4
 
-[![Release - 0.1.3](https://img.shields.io/static/v1?label=Release&message=0.1.3&color=2ea44f)](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.3)
-[![MacOs & Windows](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.3)
+[![Release - 0.1.4](https://img.shields.io/static/v1?label=Release&message=0.1.4&color=2ea44f)](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.4)
+[![MacOs & Windows](https://github.com/raioramalho/raiodoro/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.4)
 
 ![Raio⚡️Doro App Screenshot](raiodoro.png)
 
@@ -9,7 +9,7 @@ Raio⚡️Doro é uma ferramenta de gerenciamento de tempo baseada na técnica d
 
 **Links:**
 - [Site do Raio⚡️Doro](https://raioramalho.github.io/raiodoro-page)
-- [Versão 0.1.3 - Download](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.3)
+- [Versão 0.1.4 - Download](https://github.com/raioramalho/raiodoro/releases/tag/v0.1.4)
 
 **Recursos Principais:**
 - **Temporizador Pomodoro Interativo:** Os usuários podem definir e iniciar um temporizador Pomodoro. O temporizador exibe contagem regressiva em formato de horas e minutos. Botões intuitivos permitem iniciar, pausar e parar o temporizador.
@@ -34,7 +34,7 @@ Este aplicativo é distribuído sob a licença MIT. Consulte o arquivo LICENSE p
 Alan Ramalho
 
 ## Versão atual
-0.1.3 - 07/03/2024
+0.1.4 - 29/03/2024
 
 ## Notas de Lançamento
 
