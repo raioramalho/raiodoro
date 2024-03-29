@@ -38,7 +38,7 @@ Alan Ramalho
 
 ## Notas de Lançamento
 
-### Versão 0.1.4 - 08/03/2024
+### Versão 0.1.4 - 29/03/2024
 - **Novo Recurso Visual:** Novo estilo de relógio Arrow Left ( ← ) and Arrow Right( → ) para mudar. [✅]
 - **Novo Recurso:** Adicionamos atalhos Shift + I  para dar start no timer. [✅]
 - **Novo Recurso:** Adicionamos atalhos Shift + P  para dar pause no timer. [✅]
