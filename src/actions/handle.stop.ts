@@ -1,6 +1,7 @@
+import { Backend_log } from "@/cases/backend_log";
 import { ask } from "@tauri-apps/api/dialog";
 
-export default async function handleStop(setIsRunning: any, setTimer: any, Backend_log: any) {
+export default async function handleStop(setIsRunning: any, setTimer: any) {
   await ask("Deseja zerar o timer?", "Raio⚡️Doro")
     .then((res: boolean) => {
       if (res) {

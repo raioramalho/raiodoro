@@ -1,7 +1,8 @@
+import { Backend_log } from "@/cases/backend_log";
 import { tauri } from "@tauri-apps/api";
 import { ask } from "@tauri-apps/api/dialog";
 
-export default async function handleExit(Backend_log: any) {
+export default async function handleExit() {
   Backend_log("Send ask for the user.");
   await ask("Deseja mesmo fechar o pomodoro?", "Raio⚡️Doro")
     .then((res) => {

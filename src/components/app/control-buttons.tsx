@@ -14,11 +14,13 @@ type ControlButtonsProps = {
 };
 
 export function ControlButtons(props: ControlButtonsProps) {
+
   return (
     <div
       id="control-div"
       className="flex flex-row justify-center items-center gap-1 mt-4"
     >
+
       {props.isRunning ? (
         <PauseButton onClick={props.handlePause} />
       ) : (

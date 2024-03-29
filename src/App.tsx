@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { sendNotification } from "@tauri-apps/api/notification";
-import { Backend_log } from "./cases/backend_log";
 import {
   isPermissionGranted,
   requestPermission,
@@ -12,6 +11,9 @@ import handleStop from "./actions/handle.stop";
 import handlePause from "./actions/handle.pause";
 import handleExit from "./actions/handle.exit";
 import handleChange from "./actions/handle.change";
+import { ShortI } from "./cases/short_i";
+import ShortK from "./cases/short_k";
+import { ShortP } from "./cases/short_p";
 
 function App() {
   async function request_permission() {
@@ -21,7 +23,6 @@ function App() {
       permissionGranted = permission === "granted";
     }
   }
-
   request_permission();
 
   const [timer, setTimer] = useState("00:00");
@@ -65,6 +66,10 @@ function App() {
     return () => clearInterval(interval);
   }, [timer, isRunning]);
 
+  ShortI(setIsRunning);
+  ShortP(setIsRunning, setTimer, timer);
+  ShortK(setIsRunning, setTimer);
+
   return (
     <main
       id="main"
@@ -88,10 +93,10 @@ function App() {
           handlePause(setIsRunning, setTimer, timer);
         }}
         handleStop={() => {
-          handleStop(setIsRunning, setTimer, Backend_log);
+          handleStop(setIsRunning, setTimer);
         }}
         handleExit={() => {
-          handleExit(Backend_log);
+          handleExit();
         }}
       />
     </main>
