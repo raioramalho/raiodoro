@@ -39,16 +39,17 @@ Alan Ramalho
 ## Notas de Lançamento
 
 ### Versão 0.1.4 - 08/03/2024
-- **Novo Recurso:** Adicionamos atalhos Command ou Control + I  para dar start no timer. [✅]
-- **Novo Recurso:** Adicionamos atalhos Command ou Control + P  para dar pause no timer. [👨🏾‍🔧]
-- **Novo Recurso:** Adicionamos atalhos Command ou Control + K  para dar stop no timer. [👨🏾‍🔧]
+- **Novo Recurso Visual:** Novo estilo de relógio Arrow Left ( ← ) and Arrow Right( → ) para mudar. [✅]
+- **Novo Recurso:** Adicionamos atalhos Shift + I  para dar start no timer. [✅]
+- **Novo Recurso:** Adicionamos atalhos Shift + P  para dar pause no timer. [✅]
+- **Novo Recurso:** Adicionamos atalhos Shift + K  para dar stop no timer. [✅]
+- **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  [👨🏾‍🔧]
+- **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. [👨🏾‍🔧]
 
 ### Versão 0.1.3 - 08/03/2024
-- **Novo Recurso:** Ao abrir o app pela primeira vez o app questiona sobre permissoes. [👨🏾‍🔧]
 - **Novo Recurso:** Github actions - step 2 - cargo, rust, tauri build. [✅] 
 - **Novo Recurso Visual:** Novo icone do app. [✅]
 - **Novo Recurso:** Github actions - step 1 - nodejs yarn & vite build. [✅]
-- **Correção de Bug:** Ajustado a notificação ao término do pomodoro.  [👨🏾‍🔧]
 - **Correção de Bug:** Ao recusar fechar a aplicação o app era finalizado. [✅]
 - **Correção de Bug:** Detalhes visuais no titulo corrigidos. [✅]
 
