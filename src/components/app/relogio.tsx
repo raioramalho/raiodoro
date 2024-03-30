@@ -36,10 +36,10 @@ export function Relogio(props: RelogioProps) {
             className="w-[255px] h-[250px] border-2 rounded-lg flex flex-col justify-center items-center"
           >
             <ThemeToggle />            
-            <Input
+            <Input            
               onChange={props.handleChange}
               readOnly={props.isRunning}
-              className="ml-2 text-6xl w-[165px] border-none outline-none focus:border-none focus:outline-none z-0"
+              className="text-7xl w-[200px] border-none outline-none focus:border-none focus:outline-none z-0"
               value={props.timer}
             />
           </div>
