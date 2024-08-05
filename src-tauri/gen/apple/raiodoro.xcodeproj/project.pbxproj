@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F61F215D38FAC150EF0347 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D2B27D1B7B12C09B18A15472 /* main.mm */; };
+		1E948A115A1E4FCCF44CBF32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80A9633E89018F8F5A838E0 /* UIKit.framework */; };
+		56571E32CFE4CAB9ED7F56D7 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC6A4CC24BE06D5591C878E /* Metal.framework */; };
+		7894E963DA066B247E920CA1 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353A26664D7913C01669E3C /* MetalKit.framework */; };
+		9AFE0E1469C5CFE3133BFB36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C362338D73D2BEC8B64DDC4 /* Security.framework */; };
+		B0068D3ACF0BFB52876810E9 /* libraiodoro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55643A534BCC26B002DA2C94 /* libraiodoro.a */; };
+		B6094CAF7D43606776B370DD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A25D5695AD18E6D579590E /* WebKit.framework */; };
+		C2206948D8CF10E38A084968 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BB52C32ED593A304F472C9 /* QuartzCore.framework */; };
+		CD99E5F3E1EB52CF63DA4D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84958B910FAA28C65B2BE6B9 /* LaunchScreen.storyboard */; };
+		D357372445A1CD3AEBAF0748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D59A4067A4D15F7DD27E5A /* CoreGraphics.framework */; };
+		D8521D2D3812D223D1780262 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = EA290FBE137CFE9EA305E21E /* assets */; };
+		ED342CAD8743A88C824F42E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32DBE4AE1D258EA3D9C5A490 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04E5BBD9D80783C3E31AB017 /* raiodoro_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = raiodoro_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06D59A4067A4D15F7DD27E5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32DBE4AE1D258EA3D9C5A490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C362338D73D2BEC8B64DDC4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		55643A534BCC26B002DA2C94 /* libraiodoro.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libraiodoro.a; sourceTree = "<group>"; };
+		67C8D28C5F2176586CA267F1 /* raiodoro_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = raiodoro_iOS.entitlements; sourceTree = "<group>"; };
+		8353A26664D7913C01669E3C /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		83A25D5695AD18E6D579590E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		84958B910FAA28C65B2BE6B9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DDAE2977783AA5C200C8987 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		9CC6A4CC24BE06D5591C878E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		C3C5AE49D7A3ADD247DB2623 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		D2B27D1B7B12C09B18A15472 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		DEB62D7A0726E7CBE3F6FCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EA290FBE137CFE9EA305E21E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		F4BB52C32ED593A304F472C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F80A9633E89018F8F5A838E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF2F6B1D3B31D8BEA341A01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0068D3ACF0BFB52876810E9 /* libraiodoro.a in Frameworks */,
+				D357372445A1CD3AEBAF0748 /* CoreGraphics.framework in Frameworks */,
+				56571E32CFE4CAB9ED7F56D7 /* Metal.framework in Frameworks */,
+				7894E963DA066B247E920CA1 /* MetalKit.framework in Frameworks */,
+				C2206948D8CF10E38A084968 /* QuartzCore.framework in Frameworks */,
+				9AFE0E1469C5CFE3133BFB36 /* Security.framework in Frameworks */,
+				1E948A115A1E4FCCF44CBF32 /* UIKit.framework in Frameworks */,
+				B6094CAF7D43606776B370DD /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		060C14533F8A354437E59BAB /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				C3C5AE49D7A3ADD247DB2623 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		0ECFC073C96BEEEE2F1CD54C /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		1CFD6C7E13441074A4F6A03E /* raiodoro */ = {
+			isa = PBXGroup;
+			children = (
+				D2B27D1B7B12C09B18A15472 /* main.mm */,
+				060C14533F8A354437E59BAB /* bindings */,
+			);
+			path = raiodoro;
+			sourceTree = "<group>";
+		};
+		57C2168086145998C1982167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06D59A4067A4D15F7DD27E5A /* CoreGraphics.framework */,
+				55643A534BCC26B002DA2C94 /* libraiodoro.a */,
+				9CC6A4CC24BE06D5591C878E /* Metal.framework */,
+				8353A26664D7913C01669E3C /* MetalKit.framework */,
+				F4BB52C32ED593A304F472C9 /* QuartzCore.framework */,
+				4C362338D73D2BEC8B64DDC4 /* Security.framework */,
+				F80A9633E89018F8F5A838E0 /* UIKit.framework */,
+				83A25D5695AD18E6D579590E /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74AB0E5E083051757C75941B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1CFD6C7E13441074A4F6A03E /* raiodoro */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7961CED98A266E769DC79D87 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8DDAE2977783AA5C200C8987 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		990F8581E25F29A1E37BBD24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E5BBD9D80783C3E31AB017 /* raiodoro_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99C1771C4B1BC391BC38D906 = {
+			isa = PBXGroup;
+			children = (
+				EA290FBE137CFE9EA305E21E /* assets */,
+				32DBE4AE1D258EA3D9C5A490 /* Assets.xcassets */,
+				84958B910FAA28C65B2BE6B9 /* LaunchScreen.storyboard */,
+				0ECFC073C96BEEEE2F1CD54C /* Externals */,
+				AB1EFD8E35967A9480BEE34B /* raiodoro_iOS */,
+				74AB0E5E083051757C75941B /* Sources */,
+				7961CED98A266E769DC79D87 /* src */,
+				57C2168086145998C1982167 /* Frameworks */,
+				990F8581E25F29A1E37BBD24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB1EFD8E35967A9480BEE34B /* raiodoro_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DEB62D7A0726E7CBE3F6FCE9 /* Info.plist */,
+				67C8D28C5F2176586CA267F1 /* raiodoro_iOS.entitlements */,
+			);
+			path = raiodoro_iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C35A997A55CB84CF288B2835 /* raiodoro_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897FCD48329180108AEE5897 /* Build configuration list for PBXNativeTarget "raiodoro_iOS" */;
+			buildPhases = (
+				738211E7B6F47DD42AD7EA8D /* Build Rust Code */,
+				9572F6CBF827F97F5480024E /* Sources */,
+				B7BC0B57B2B6DDA1C7BE7027 /* Resources */,
+				AF2F6B1D3B31D8BEA341A01B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = raiodoro_iOS;
+			productName = raiodoro_iOS;
+			productReference = 04E5BBD9D80783C3E31AB017 /* raiodoro_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88FB7A4BA60A716AD6163502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C35A997A55CB84CF288B2835 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C5F186BC847B6844003CC4AE /* Build configuration list for PBXProject "raiodoro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 99C1771C4B1BC391BC38D906;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C35A997A55CB84CF288B2835 /* raiodoro_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7BC0B57B2B6DDA1C7BE7027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED342CAD8743A88C824F42E9 /* Assets.xcassets in Resources */,
+				CD99E5F3E1EB52CF63DA4D8B /* LaunchScreen.storyboard in Resources */,
+				D8521D2D3812D223D1780262 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		738211E7B6F47DD42AD7EA8D /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libraiodoro.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libraiodoro.a",
+				"$(SRCROOT)/Externals/arm64-sim/${CONFIGURATION}/libraiodoro.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "yarn tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9572F6CBF827F97F5480024E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F61F215D38FAC150EF0347 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D1A85EC9676BDAF5F86F25B /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		7B5EB85FC35178F624D9656C /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = raiodoro_iOS/raiodoro_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = raiodoro_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.raiosystems;
+				PRODUCT_NAME = raiodoro;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+			};
+			name = debug;
+		};
+		87439F0C7660037DE6FA70F5 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		FBA573C47C03E309980D1E14 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = raiodoro_iOS/raiodoro_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = raiodoro_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.raiosystems;
+				PRODUCT_NAME = raiodoro;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  x86_64";
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		897FCD48329180108AEE5897 /* Build configuration list for PBXNativeTarget "raiodoro_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5EB85FC35178F624D9656C /* debug */,
+				FBA573C47C03E309980D1E14 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		C5F186BC847B6844003CC4AE /* Build configuration list for PBXProject "raiodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D1A85EC9676BDAF5F86F25B /* debug */,
+				87439F0C7660037DE6FA70F5 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88FB7A4BA60A716AD6163502 /* Project object */;
+}

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { sendNotification } from "@tauri-apps/api/notification";
+import { sendNotification } from "@tauri-apps/plugin-notification";
 import {
   isPermissionGranted,
   requestPermission,
-} from "@tauri-apps/api/notification";
+} from "@tauri-apps/plugin-notification";
 import { ControlButtons } from "./components/app/control-buttons";
 import { Relogio } from "./components/app/relogio";
 import handleStart from "./actions/handle.start";
